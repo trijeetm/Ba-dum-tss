@@ -1,0 +1,7 @@
+CXX=g++
+INCLUDES=-Irtaudio/ -Istk/ -Ix-api/ -Iy-api
+FLAGS=-D__MACOSX_CORE__ $(INCLUDES) -c
+LIBS=-framework CoreAudio -framework CoreMIDI -framework CoreFoundation \
+        -framework IOKit -framework Carbon -framework OpenGL \
+        -framework GLUT -lstdc++ -lm
+
